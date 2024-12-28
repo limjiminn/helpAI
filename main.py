@@ -3,6 +3,7 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 
+#local 용
 #from dotenv import load_dotenv
 #load_dotenv()
 
