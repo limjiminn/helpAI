@@ -27,7 +27,7 @@ messages = [
 # Prompt 템플릿 생성
 prompt = ChatPromptTemplate.from_messages(messages)
 
-if st.button("내용 요청하기"):
+def search_action():    
     with st.spinner("내용 작성 중..."):
         try:
             
@@ -38,3 +38,8 @@ if st.button("내용 요청하기"):
         except Exception as e:
             st.error(f"오류가 발생했습니다: {e}")
 
+if st.button("내용 요청하기"):
+    search_action()
+
+if title:
+    search_action()
